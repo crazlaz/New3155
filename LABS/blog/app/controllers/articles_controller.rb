@@ -15,10 +15,10 @@ class ArticlesController < ApplicationController
     
     def create
         @article = Article.new(article_params)
-        byebug
+        #byebug
         
         if @article.save
-            byebug
+            #byebug
             
             redirect_to @article
         else
